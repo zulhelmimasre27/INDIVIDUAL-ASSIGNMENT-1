@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Step by Step Guide</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('p1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+
+    .w3-top {
+      background-color: black !important;
+    }
+
+    .w3-bar {
+      background-color: #111 !important;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .w3-bar a {
+      color: light-grey !important;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 0.15em;
+      margin-left: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 120px 20px 60px;
+      background-color: rgba(0, 0, 0, 0.75);
+      border-radius: 12px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    h2 {
+      text-align: center;
+      color: #f5f5f5;
+      margin-bottom: 50px;
+      letter-spacing: 0.05em;
+    }
+
+    ol.timeline {
+      counter-reset: step;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ol.timeline li {
+      counter-increment: step;
+      background: rgba(255, 255, 255, 0.1);
+      border-left: 4px solid #ccc;
+      margin: 30px 0;
+      padding: 20px 30px;
+      border-radius: 10px;
+      position: relative;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      color: #f0f0f0;
+    }
+
+    ol.timeline li::before {
+      content: counter(step, decimal-leading-zero);
+      position: absolute;
+      left: -35px;
+      top: 20px;
+      background-color: #3498db;
+      color: white;
+      font-weight: bold;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+    }
+
+    ol.timeline li:nth-child(1)::before { background-color: #ff6b6b; }
+    ol.timeline li:nth-child(2)::before { background-color: #f5b041; }
+    ol.timeline li:nth-child(3)::before { background-color: #3498db; }
+    ol.timeline li:nth-child(4)::before { background-color: #2ecc71; }
+    ol.timeline li:nth-child(5)::before { background-color: #9b59b6; }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      color: #ccc;
+      letter-spacing: 0.05em;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar">
+    <a href="index.html#home" class="w3-bar-item">ThePathToSuccess</a>
+    <div class="w3-right w3-hide-small">
+      <a href="index.html#personal" class="w3-bar-item">Personal</a>
+      <a href="index.html#Career" class="w3-bar-item">Career</a>
+      <a href="index.html#contact" class="w3-bar-item">Contact</a>
+      <a href="steps.html" class="w3-bar-item">Steps</a>
+      <a href="inspiration.html" class="w3-bar-item">Inspiration</a>
+    </div>
+  </div>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+  <h2>My Journey to Becoming a Photographer</h2>
+  <ol class="timeline">
+   <li>Earn a Bachelor's Degree in Graphic Design or related field</li>
+      <li>Master design tools like Adobe Creative Suite</li>
+      <li>Build a personal design portfolio</li>
+      <li>Complete internships and freelance projects</li>
+      <li>Learn UI/UX, web and motion graphics</li>
+      <li>Network and join design communities</li>
+      <li>Stay current with design trends and technology</li>
+  </ol>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>Designed by <a href="https://www.facebook.com/share/16ZjLujVb9/?mibextid=wwXIfr" target="_blank"
+class="w3-hover-text-green">ZULHELMI</a> | © 2025</p>
+</footer>
+
+</body>
+</html>

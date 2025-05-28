@@ -1,0 +1,35 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get form inputs
+    $name = htmlspecialchars($_POST["Name"]);
+    $email = htmlspecialchars($_POST["Email"]);
+    $subject = htmlspecialchars($_POST["Subject"]);
+    $comment = htmlspecialchars($_POST["Comment"]);
+
+    echo "<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Message Received</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' href='https://www.w3schools.com/w3css/5/w3.css'>
+    </head>
+    <body class='w3-container w3-light-grey'>
+
+    <div class='w3-card w3-padding w3-white w3-margin-top w3-center' style='max-width: 600px; margin:auto;'>
+        <h2 class='w3-text-green'>Thank You, $name!</h2>
+        <p>We have received your message:</p>
+        <p><strong>Email:</strong> $email</p>
+        <p><strong>Subject:</strong> $subject</p>
+        <p><strong>Comment:</strong><br>$comment</p>
+        <a href='index.html' class='w3-button w3-blue w3-margin-top'>Go Back</a>
+    </div>
+
+    </body>
+    </html>";
+} else {
+    // Redirect if accessed directly
+    header("Location: index.html");
+    exit();
+}
+?>
