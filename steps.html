@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Step by Step Guide</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #000000, #434343);
+      margin: 0;
+      padding: 0;
+      color: #ecf0f1;
+    }
+
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: #ecf0f1;
+      text-decoration: none;
+      font-weight: bold;
+      margin-left: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 60px 20px;
+      background-color: rgba(44, 44, 44, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    h2 {
+      text-align: center;
+      color: #f39c12;
+      margin-bottom: 5px;
+    }
+
+    .photo-container {
+      display: flex;
+      flex-wrap: wrap; /* Allow wrapping for smaller screens */
+      justify-content: space-between; /* Space out the images */
+      margin-bottom: 40px; /* Space below the photo slots */
+    }
+
+    .photo-slot {
+      flex: 1 1 calc(33.33% - 20px); /* Three images per row with spacing */
+      margin: 10px; /* Add margin for spacing between images */
+      text-align: center;
+    }
+
+    .photo-slot img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .timeline {
+      position: relative;
+      padding: 20;
+      margin: 0;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin: 20px 0;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      color: #ecf0f1;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .timeline-item:nth-child(odd) {
+      margin-left: 50px;
+    }
+
+    .timeline-item:nth-child(even) {
+      margin-right: 50px;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      top: 20px;
+      left: -20px;
+      width: 20px;
+      height: 20px;
+      background-color: #e67e22; /* Marker color */
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    
+     a {  
+      text-decoration: none;
+      color: white;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color:orange;
+    }
+
+
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #bdc3c7;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <a href="index.html#home">ThePathToSuccess</a>
+  <div>
+    <a href="index.html#personal">Personal</a>
+    <a href="index.html#Career">Career</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="steps.html">Steps</a>
+    <a href="inspiration.html">Inspiration</a>
+  </div>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+  <h2>My Journey to Becoming a Photographer</h2>
+  
+  <div class="timeline">
+    <div class="timeline-item">Earn a Bachelor's Degree in Graphic Design or related field</div>
+    <div class="timeline-item">Master design tools like Adobe Creative Suite</div>
+    <div class="timeline-item">Build a personal design portfolio</div>
+    <div class="timeline-item">Complete internships and freelance projects</div>
+    <div class="timeline-item">Learn UI/UX, web and motion graphics</div>
+    <div class="timeline-item">Network and join design communities</div>
+    <div class="timeline-item">Stay current with design trends and technology</div>
+  </div>
+
+  <!-- Photo Slots at the Bottom -->
+  <h2>Gallery Of My Work</h2>
+  <div class="photo-container">
+    <div class="photo-slot">
+      <img src="p5.jpg" alt="Photography 1" />
+    </div>
+    <div class="photo-slot">
+      <img src="p4.jpg" alt="Photography 2" />
+    </div>
+    <div class="photo-slot">
+      <img src="p6.jpg" alt="Photography 3" />
+    </div>
+    <div class="photo-slot">
+      <img src="p7.jpg" alt="Photography 4" />
+    </div>
+    <div class="photo-slot">
+      <img src="p8.jpg" alt="Photography 5" />
+    </div>
+    <div class="photo-slot">
+      <img src="p9.jpg" alt="Photography 6" />
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>Designed by <a
+href="https://www.facebook.com/share/16ZjLujVb9/?mibextid=wwXIfr" target="_blank" >ZULHELMI | © 2025</a></p>
+
+</footer>
+
+</body>
+</html>
